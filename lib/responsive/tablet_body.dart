@@ -27,6 +27,7 @@ class _TabletScaffoldState extends State<TabletScaffold> {
               child: SizedBox(
                 width: double.infinity,
                 child: GridView.builder(
+                  controller: ScrollController(),
                   itemCount: 4,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 4),
@@ -40,6 +41,7 @@ class _TabletScaffoldState extends State<TabletScaffold> {
             // list of previous days
             Expanded(
               child: ListView.builder(
+                controller: ScrollController(),
                 itemCount: 6,
                 itemBuilder: (context, index) {
                   return const MyTile();
