@@ -4,7 +4,7 @@ var defaultBackgroundColor = Colors.grey[300];
 var appBarColor = Colors.grey[900];
 var myAppBar = AppBar(
   backgroundColor: appBarColor,
-  title: Text(' '),
+  title: const Text(' '),
   centerTitle: false,
 );
 var drawerTextColor = TextStyle(
@@ -16,7 +16,7 @@ var myDrawer = Drawer(
   elevation: 0,
   child: Column(
     children: [
-      DrawerHeader(
+      const DrawerHeader(
         child: Icon(
           Icons.favorite,
           size: 64,
@@ -25,7 +25,7 @@ var myDrawer = Drawer(
       Padding(
         padding: tilePadding,
         child: ListTile(
-          leading: Icon(Icons.home),
+          leading: const Icon(Icons.home),
           title: Text(
             'D A S H B O A R D',
             style: drawerTextColor,
@@ -35,7 +35,7 @@ var myDrawer = Drawer(
       Padding(
         padding: tilePadding,
         child: ListTile(
-          leading: Icon(Icons.settings),
+          leading: const Icon(Icons.settings),
           title: Text(
             'S E T T I N G S',
             style: drawerTextColor,
@@ -45,7 +45,7 @@ var myDrawer = Drawer(
       Padding(
         padding: tilePadding,
         child: ListTile(
-          leading: Icon(Icons.info),
+          leading: const Icon(Icons.info),
           title: Text(
             'A B O U T',
             style: drawerTextColor,
@@ -55,7 +55,7 @@ var myDrawer = Drawer(
       Padding(
         padding: tilePadding,
         child: ListTile(
-          leading: Icon(Icons.logout),
+          leading: const Icon(Icons.logout),
           title: Text(
             'L O G O U T',
             style: drawerTextColor,

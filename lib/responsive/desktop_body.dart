@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:responsivedashboard/util/my_tile.dart';
 import '../constants.dart';
 import '../util/my_box.dart';
-import '../util/my_tile.dart';
 
-class DesktopScaffold extends StatefulWidget {
+class DesktopScaffold extends StatelessWidget {
   const DesktopScaffold({Key? key}) : super(key: key);
-
-  @override
-  State<DesktopScaffold> createState() => _DesktopScaffoldState();
-}
-
-class _DesktopScaffoldState extends State<DesktopScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +29,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                     child: SizedBox(
                       width: double.infinity,
                       child: GridView.builder(
+                        controller: ScrollController(),
                         itemCount: 4,
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
@@ -49,6 +44,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                   // list of previous days
                   Expanded(
                     child: ListView.builder(
+                      controller: ScrollController(),
                       itemCount: 7,
                       itemBuilder: (context, index) {
                         return const MyTile();
