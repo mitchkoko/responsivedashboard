@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 var defaultBackgroundColor = Colors.grey[300];
-var appBarColor = Colors.grey[900];
+var appBarColor = const Color.fromARGB(255, 255, 255, 255);
 var myAppBar = AppBar(
   backgroundColor: appBarColor,
-  title: Text(' '),
+  title: Text('Amalia SuperApps'),
   centerTitle: false,
 );
 var drawerTextColor = TextStyle(
